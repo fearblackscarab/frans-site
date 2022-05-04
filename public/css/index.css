@@ -5,6 +5,48 @@
   --theme-color:#abf2ff;
 }
 
+/* icon svg default style */
+
+.icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.cart-icon-div{
+  font-size: calc(60px + (90px - 60) * ((100vw - 300px) / (1600 - 300)));
+  margin: 0;
+  padding: 10px;
+}
+
+.cart-icon{
+  font-size: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300)));
+  color: var(--theme-color);
+}
+
+@media(max-width:767px){ 
+  .cart-div{
+    display: inline;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 0px;
+    right: 45px;
+  }
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+
 body{
   margin: 0;
   padding: 0;
@@ -19,7 +61,37 @@ body{
   color: white; */
 }
 
-/* hamburger style */
+
+.contact-link{
+  color: blue;
+}
+.placeholder{
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.header{
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  margin-bottom: 10px;
+}
+
+
+.shop-amount{
+  text-align: center;
+  padding: 10px;
+}
+
+/* .row{
+  width: 100%;
+} */
+
+/* hamburger style not mine */
 
 a {
   text-decoration: none;
@@ -67,6 +139,7 @@ a:hover {
   position: relative;
 
   background: #222;
+  /* background-color: white; */
   border-radius: 3px;
 
   z-index: 1;
@@ -141,11 +214,18 @@ a:hover {
 
 /* top nav */
 .top-nav{
-  padding-top: 50px;
+  padding: 25px;
 }
 
 .top-nav-item{
-  padding: 15px;
+  padding: 15px 0;
+}
+
+@media((min-width:768px) and (max-width:918)){
+  .top-nav-item{
+    padding-left:calc(5px + (15px - 5) * ((100vw - 768px) / (918 - 768)));
+    padding-right:calc(5px + (15px - 5) * ((100vw - 768px) / (918 - 768)));
+  }
 }
 
 .shop-dropdown{
@@ -153,10 +233,20 @@ a:hover {
   border: none;
 }
 
+.small-nav{
+  padding-bottom: 20px;
+}
+
 /* about page */
 
 .about-div{
   padding: 0 20%;
+}
+
+/* product pages */
+
+.product{
+  padding: 20px;
 }
 
 .footer{

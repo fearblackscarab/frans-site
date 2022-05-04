@@ -9,9 +9,9 @@ const Dropdown =()=>{
   </Link>
 
   <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <Link to='/' className="dropdown-item">Bracelets</Link>
-      <Link to='/' className="dropdown-item">Earrings</Link>
-      <Link to='/' className="dropdown-item">Necklaces</Link>
+      <Link to='/bracelets' className="dropdown-item">Bracelets</Link>
+      <Link to='/necklaces' className="dropdown-item">Necklaces</Link>
+      <Link to='/earrings' className="dropdown-item">Earrings</Link>
   </div>
 </div>
     )
