@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Dropdown =()=>{
     return(
-        <div className="dropdown show top-nav-item">
+        <div className="dropdown show top-nav-item col-4">
   <Link className="dropdown-toggle" to="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Shop
   </Link>

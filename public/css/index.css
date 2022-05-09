@@ -1,8 +1,8 @@
-:root{
+:root {
   /* default light colors, going to create dark mode as option */
-  --primary:white;
-  --text-color:black;
-  --theme-color:#abf2ff;
+  --primary: white;
+  --text-color: black;
+  --theme-color: #abf2ff;
 }
 
 /* icon svg default style */
@@ -16,26 +16,24 @@
   fill: currentColor;
 }
 
-.cart-icon-div{
+.cart-icon-div {
   font-size: calc(60px + (90px - 60) * ((100vw - 300px) / (1600 - 300)));
   margin: 0;
   padding: 10px;
 }
 
-.cart-icon{
+.cart-icon {
   font-size: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300)));
   color: var(--theme-color);
 }
 
-@media(max-width:767px){ 
-  .cart-div{
-    display: inline;
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    top: 0px;
-    right: 45px;
-  }
+.cart-div {
+  display: inline;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 0px;
+  right: 45px;
 }
 
 /* ==========================================
@@ -47,42 +45,43 @@ Single-colored icons can be modified like so:
 ========================================== */
 
 
-body{
+body {
   margin: 0;
   padding: 0;
-  
+
   /* page colors */
 
-  background-color:var(--primary);
-  color:var(--text-color);
-  
+  background-color: var(--primary);
+  color: var(--text-color);
+
   /* style for testing */
   /* background-color: black;
   color: white; */
 }
 
 
-.contact-link{
+.contact-link {
   color: blue;
 }
-.placeholder{
+
+.placeholder {
   display: block;
   width: 100%;
   height: auto;
   background-color: white;
 }
 
-.header{
+.header {
   margin: 0;
   padding: 0;
 }
 
-.logo{
+.logo {
   margin-bottom: 10px;
 }
 
 
-.shop-amount{
+.shop-amount {
   text-align: center;
   padding: 10px;
 }
@@ -96,7 +95,8 @@ body{
 a {
   text-decoration: none;
   color: #222;
-  transition: color 0.3s ease; /*transition of color when hovering*/
+  transition: color 0.3s ease;
+  /*transition of color when hovering*/
 }
 
 a:hover {
@@ -124,8 +124,10 @@ a:hover {
   left: -7px;
   cursor: pointer;
 
-  opacity: 0; /* hidden */
-  z-index: 2; /* will be placed over hamburger */
+  opacity: 0;
+  /* hidden */
+  z-index: 2;
+  /* will be placed over hamburger */
 
   /* -webkit-touch-callout: none; */
   /* figure out what this does  it's non-standard. don't use it*/
@@ -146,35 +148,37 @@ a:hover {
 
   transform-origin: 4px 0px;
 
-  transition: 
-      transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-      background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-      opacity 0.55s ease;
+  transition:
+    transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
 
 }
 
 #menuToggle span:first-child {
-  transform-origin: 0% 0%; /*see what this does*/
+  transform-origin: 0% 0%;
+  /*see what this does*/
   /* sets the origin for transformation */
 }
 
 #menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%; /* what does this do? */
+  transform-origin: 0% 100%;
+  /* what does this do? */
 }
 
-#menuToggle input:checked ~ span {
+#menuToggle input:checked~span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #222;
   /* input:checked checks to see if element is checked in on state */
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3) {
+#menuToggle input:checked~span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2) {
+#menuToggle input:checked~span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -189,11 +193,13 @@ a:hover {
   list-style-type: none;
   visibility: hidden;
 
-  -webkit-font-smoothing: antialiased; /*for safari*/
+  -webkit-font-smoothing: antialiased;
+  /*for safari*/
 
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0); /* moved it to the left! */
-  
+  transform: translate(-100%, 0);
+  /* moved it to the left! */
+
 }
 
 
@@ -205,50 +211,50 @@ a:hover {
 
 /* now to slide it in from the left */
 
-#menuToggle input:checked ~ ul {
+#menuToggle input:checked~ul {
   transform: none;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
   visibility: visible;
 }
 
 
 /* top nav */
-.top-nav{
+.top-nav {
   padding: 25px;
 }
 
-.top-nav-item{
+.top-nav-item {
   padding: 15px 0;
 }
 
-@media((min-width:768px) and (max-width:918)){
-  .top-nav-item{
-    padding-left:calc(5px + (15px - 5) * ((100vw - 768px) / (918 - 768)));
-    padding-right:calc(5px + (15px - 5) * ((100vw - 768px) / (918 - 768)));
+@media((min-width:768px) and (max-width:918)) {
+  .top-nav-item {
+    padding-left: calc(5px + (15px - 5) * ((100vw - 768px) / (918 - 768)));
+    padding-right: calc(5px + (15px - 5) * ((100vw - 768px) / (918 - 768)));
   }
 }
 
-.shop-dropdown{
+.shop-dropdown {
   background-color: transparent;
   border: none;
 }
 
-.small-nav{
+.small-nav {
   padding-bottom: 20px;
 }
 
 /* about page */
 
-.about-div{
+.about-div {
   padding: 0 20%;
 }
 
 /* product pages */
 
-.product{
+.product {
   padding: 20px;
 }
 
-.footer{
+.footer {
   background-color: var(--theme-color);
 }

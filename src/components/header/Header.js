@@ -10,15 +10,12 @@ const Header = () => {
     return (
         <header className="header container-fluid text-center">
             <div className="row justify-content-center">
-                <LargeNav />
-                <div className="logo-div col-12 d-md-none">
+                <div className="logo-div col-12">
                     <Link to='/'><img src="/media/logo.jpg" className="img-fluid logo" /></Link>
                 </div>
-                <div className="logo-div col-4 d-none d-md-block">
-                    <Link to='/'><img src="/media/small-logo.jpg" className="img-fluid small-logo" /></Link>
-                </div>
+                <LargeNav />
                 <SmallNav />
-                <div className="cart-div col-4">
+                <div className="cart-div">
                     <div className="cart-icon-div">
                     <ImCart className='cart-icon'/>
                     <p className="shop-amount">0</p>

@@ -8,6 +8,7 @@ import Bracelets from "./pages/Bracelets";
 import Necklaces from "./pages/Necklaces"
 import Earrings from "./pages/Earrings"
 import SingleJewelry from "./pages/SingleJewelry";
+import Form from './pages/Form';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/necklaces" element={<Necklaces/>}/>
         <Route path="/earrings" element={<Earrings/>}/>
         <Route path="/:jewelryId" element={<SingleJewelry/>}/>
+        <Route path="/form" element={<Form/>}/>
       </Routes>
       <Footer/>
     </div>

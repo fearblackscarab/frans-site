@@ -15,40 +15,83 @@ const Carousel = () => {
                 <div className="carousel-item active">
                     <div className="placeholder">
                         <div className="card-deck">
-                            <Product />
-                            <Product />
-                            <Product />
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+                            </div>
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+                            </div>
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+                            </div>
+
                         </div>
                     </div>
                 </div>
+
                 <div className="carousel-item">
                     <div className="placeholder">
                         <div className="card-deck">
-                            <Product />
-                            <Product />
-                            <Product />
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+                            </div>
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+                            </div>
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+                            </div>
+
                         </div>
                     </div>
                 </div>
+
                 <div className="carousel-item">
                     <div className="placeholder">
                         <div className="card-deck">
-                            <Product />
-                            <Product />
-                            <Product />
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+                            </div>
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+                            </div>
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div className="carousel-item">
                     <div className="placeholder">
                         <div className="card-deck">
-                            <Product />
-                            <Product />
-                            <Product />
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+                            </div>
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+                            </div>
+                            <div className="product col-sm-6 col-md-4">
+
+                                <Product />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
