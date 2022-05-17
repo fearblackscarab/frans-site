@@ -1,29 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Product from "./Product";
 
-const ProductsDisplay = () => {
+const ProductsDisplay = (props) => {
+    // const [data,setData]=useState({})
+    // setData(props.type)
     return (
         <div className="product-group text-center">
             <h2 className="product-group-title">type of product</h2>
             <div className="card-deck">
-                <div className="product col-sm-6 col-md-4">
-                    <Product />
-                </div>
-                <div className="product col-sm-6 col-md-4">
-                    <Product />
-                </div>
-                <div className="product col-sm-6 col-md-4">
-                    <Product />
-                </div>
-                <div className="product col-sm-6 col-md-4">
-                    <Product />
-                </div>
-                <div className="product col-sm-6 col-md-4">
-                    <Product />
-                </div>
-                <div className="product col-sm-6 col-md-4">
-                    <Product />
-                </div>
+                <Product img='testbracelet.jpg' />
             </div>
         </div>
     )

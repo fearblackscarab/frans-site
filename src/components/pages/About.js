@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const About = (props) => {
     return (
         <main className="main">
             <div className="about-div text-center">

@@ -4,6 +4,21 @@
   --text-color: black;
   --theme-color: #abf2ff;
 }
+/* form style */
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.submit-button{
+  margin: 20px 0;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.form-item{
+  margin: 20px 0;
+}
 
 /* icon svg default style */
 

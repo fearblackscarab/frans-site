@@ -1,13 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Product = () => {
+const Product = (props) => {
     return (
         <div className="card">
-            <img className="card-img-top" src="/media/placeholder.jpg" alt="Card image cap" />
-            <div className="card-body text-center">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
+            <Link to={`/${props.id}`}>
+                <img className="card-img-top" src={`/media/${props.img}`} alt="Card image cap" />
+                <div className="card-body text-center">
+                    <h5 className="card-title">{props.name}</h5>
+                    <p className="card-text">{props.desc}</p>
+                </div>
+            </Link>
         </div>
     )
 };

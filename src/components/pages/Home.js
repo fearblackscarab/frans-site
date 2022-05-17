@@ -1,10 +1,9 @@
 import React from "react";
 import Carousel from "./Carousel";
 
-const Home =()=>{
+const Home =(props)=>{
     return(
         <main className="main text-center">
-                        <Carousel/>
             <div className="container">
                 <div className="row justify-content-center">
                     <img src="/media/about-placeholder.jpg" alt="" className="img-fluid home-img col-12" />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./header/Header";
 import Footer from "./Footer";
@@ -15,13 +15,13 @@ function App() {
     <div className="App">
       <Header/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/bracelets" element={<Bracelets/>}/>
-        <Route path="/necklaces" element={<Necklaces/>}/>
-        <Route path="/earrings" element={<Earrings/>}/>
-        <Route path="/:jewelryId" element={<SingleJewelry/>}/>
-        <Route path="/form" element={<Form/>}/>
+        <Route path="/" element={<Home />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/bracelets" element={<Bracelets />}/>
+        <Route path="/necklaces" element={<Necklaces />}/>
+        <Route path="/earrings" element={<Earrings />}/>
+        <Route path="/:jewelryid" element={<SingleJewelry />}/>
+        <Route path="/form" element={<Form />}/>
       </Routes>
       <Footer/>
     </div>
