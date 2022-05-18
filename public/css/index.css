@@ -105,7 +105,7 @@ body {
   width: 100%;
 } */
 
-/* hamburger style not mine */
+/* dropdown hamburger style not mine */
 
 a {
   text-decoration: none;
@@ -232,6 +232,7 @@ a:hover {
   visibility: visible;
 }
 
+/* end of dropdown hamburger */
 
 /* top nav */
 .top-nav {
@@ -240,6 +241,7 @@ a:hover {
 
 .top-nav-item {
   padding: 15px 0;
+  font-family: 'Lora', serif;
 }
 
 @media((min-width:768px) and (max-width:918)) {
@@ -268,6 +270,15 @@ a:hover {
 
 .product {
   padding: 20px;
+}
+
+.product-card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.product-card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .footer {

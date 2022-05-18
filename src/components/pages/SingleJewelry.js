@@ -13,19 +13,17 @@ const SingleJewelry = (props) => {
     return (
         <main className="main container">
             <div className="row">
-                <div className="single-product col-12 col-sm-6">
-                <div className="card">
-                <img className="card-img-top" src={`/media/${data.jewelry_img}`} alt="Card image cap" />
-                <div className="card-body text-center">
-                    <h5 className="card-title">{data.jewelry_name}</h5>
-                </div>
-            </div>
-                </div>
-                <div className="single-info col-12 col-sm-6">
+
+                <div className="single-card col-12 col-sm-6">
                     <Product key={data.jewelry_id} id={data.jewelry_id} img={data.jewelry_img} name={data.jewelry_name} desc={data.jewelry_desc} />
                 </div>
+                <div className="single-info col-12 col-sm-6">
+                    <h2 className="single-info-title">{data.jewelry_name}</h2>
+                    <p className="single-info-price">${data.jewelry_price}</p>
+                    <p className="single-info-desc">{data.jewelry_desc}</p>
+                </div>
             </div>
-        </main>
+        </main >
     )
 };
 

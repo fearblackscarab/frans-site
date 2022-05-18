@@ -4,7 +4,7 @@ import Dropdown from "./Dropdown";
 
 const SmallNav = () => {
     return (
-        <nav className="small-nav d-sm-none col-2 col-sm-1 text-center">
+        <nav className="small-nav d-none col-2 col-sm-1 text-center">
             <div id="menuToggle">
                 <input type="checkbox" />
                 <span></span>

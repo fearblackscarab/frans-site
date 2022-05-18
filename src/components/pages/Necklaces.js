@@ -3,7 +3,7 @@ import Product from "./Product";
 
 const Necklaces =(props)=>{
     const [data, setData] = useState([]);
-    useEffect(() => {
+    useEffect(()=> {
         const url = 'http://localhost:3001/api/jewelry/group/2';
         fetch(url).then(res => res.json()).then(item => setData(item));
     }, []);

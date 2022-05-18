@@ -16,10 +16,10 @@ const Header = () => {
                 <LargeNav />
                 <SmallNav />
                 <div className="cart-div">
-                    <div className="cart-icon-div">
+                    {/* <div className="cart-icon-div">
                     <ImCart className='cart-icon'/>
                     <p className="shop-amount">0</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </header>
