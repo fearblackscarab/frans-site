@@ -20,6 +20,16 @@
   margin: 20px 0;
 }
 
+.home-img{
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.featured{
+  font-family: 'Lora', serif;
+  margin: 0 auto;
+}
+
 /* icon svg default style */
 
 .icon {
@@ -64,14 +74,10 @@ body {
   margin: 0;
   padding: 0;
 
-  /* page colors */
-
   background-color: var(--primary);
   color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
 
-  /* style for testing */
-  /* background-color: black;
-  color: white; */
 }
 
 
@@ -105,135 +111,6 @@ body {
   width: 100%;
 } */
 
-/* dropdown hamburger style not mine */
-
-a {
-  text-decoration: none;
-  color: #222;
-  transition: color 0.3s ease;
-  /*transition of color when hovering*/
-}
-
-a:hover {
-  color: dodgerblue;
-}
-
-/* now to the menu */
-
-#menuToggle {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -7px;
-  cursor: pointer;
-
-  opacity: 0;
-  /* hidden */
-  z-index: 2;
-  /* will be placed over hamburger */
-
-  /* -webkit-touch-callout: none; */
-  /* figure out what this does  it's non-standard. don't use it*/
-}
-
-#menuToggle span {
-  display: block;
-  width: 35px;
-  height: 5px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: #222;
-  /* background-color: white; */
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition:
-    transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    opacity 0.55s ease;
-
-}
-
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-  /*see what this does*/
-  /* sets the origin for transformation */
-}
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-  /* what does this do? */
-}
-
-#menuToggle input:checked~span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #222;
-  /* input:checked checks to see if element is checked in on state */
-}
-
-#menuToggle input:checked~span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked~span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-
-  background: #efefef;
-  list-style-type: none;
-  visibility: hidden;
-
-  -webkit-font-smoothing: antialiased;
-  /*for safari*/
-
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  /* moved it to the left! */
-
-}
-
-
-
-#menu li {
-  padding: 10px 0;
-  font-size: 24px;
-}
-
-/* now to slide it in from the left */
-
-#menuToggle input:checked~ul {
-  transform: none;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-  visibility: visible;
-}
-
-/* end of dropdown hamburger */
-
 /* top nav */
 .top-nav {
   padding: 25px;
@@ -263,13 +140,24 @@ a:hover {
 /* about page */
 
 .about-div {
-  padding: 0 20%;
+  padding-bottom: 50px;
+}
+
+.about-title{
+  font-family: 'Lora', serif;
 }
 
 /* product pages */
 
+.product-group-title{
+  font-family: 'Lora', serif;
+}
 .product {
   padding: 20px;
+}
+
+.product-link:hover{
+  color:var(--text-color);
 }
 
 .product-card{
@@ -277,8 +165,21 @@ a:hover {
   transition: 0.3s;
 }
 
+.card-img{
+  height: 300px;
+}
+
 .product-card:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.single-div{
+  margin: 50px auto;
+}
+
+.single-info{
+  margin: auto;
+  text-align: center;
 }
 
 .footer {

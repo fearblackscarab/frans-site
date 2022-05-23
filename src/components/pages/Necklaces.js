@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import Product from "./Product";
+import Product from "../parts/Product";
 
 const Necklaces =(props)=>{
     const [data, setData] = useState([]);

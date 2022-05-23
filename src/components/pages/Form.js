@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const Form = (props) => {
     const [formData, setFormData] = React.useState(
@@ -12,7 +12,7 @@ const Form = (props) => {
         }
     )
 
-    const SubmitForm=(e)=>{
+    const submitForm=(e)=>{
         e.preventDefault()
         fetch('http://localhost:3001/api/jewelry/create',{
             method:'post',
@@ -38,10 +38,11 @@ const Form = (props) => {
             }
         })
     }
+    console.log(formData)
     return (
         <main className="form-page container text-center">
             <h2 className="form-title">Product Submission</h2>
-            <form className="form" onSubmit={SubmitForm}>
+            <form className="form" onSubmit={submitForm}>
                 <div className="form_div">
                     <div className="jewelry_name_div form-item">
                         <p className="jewelry-name">Name of piece</p>
