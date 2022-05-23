@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Product from "../parts/Product";
+import SingleCard from "../parts/SingleCard";
 
 const SingleJewelry = (props) => {
     const [data, setData] = useState([]);
@@ -14,7 +14,7 @@ const SingleJewelry = (props) => {
         <main className="main container">
             <div className="single-div row">
                 <div className="single-card col-12 col-sm-6">
-                    <Product key={data.jewelry_id} id={data.jewelry_id} img={data.jewelry_img} name={data.jewelry_name} desc={data.jewelry_desc} />
+                    <SingleCard key={data.jewelry_id} id={data.jewelry_id} img={data.jewelry_img} name={data.jewelry_name} desc={data.jewelry_desc} />
                 </div>
                 <div className="single-info col-12 col-sm-6">
                     <h2 className="single-info-title">{data.jewelry_name}</h2>
