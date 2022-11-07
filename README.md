@@ -1,4 +1,4 @@
-# Making a website for my mother-in-law's Jewelry business using React
+# Making a website demo for my mother-in-law's Jewelry business using React
 
 # Getting Started with Create React App
 
